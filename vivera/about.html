@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+    <div class="container">
+        <div class="slide">
+            <div class="item" style="background-image: url(img3.jpg);">
+                <div class="contant">
+                    <div class="name">Kongu Engineering College</div>
+                    <div class="des">Kongu Engineering College affiliated to Anna University is located in Perundurai,Erode. It is accredited 'A' grade by National Assessment Accreditation Council.Over the past 40 years the instituton with its good infrastructure facility and excellent academic records has emerged as a center of excellence.The college with its quality education and peaceful environment provides continuous improvement and confidence for the students to face the real world challenges and mould their future.</div>
+                   
+                </div>
+
+            </div>
+            <div class="item" style="background-image: url(img4.webp);">
+                <div class="contant">
+                    <div class="name">Information Technology</div>
+                    <div class="des">The Department of Information Technology, hosting a diverse community of approximately 500 students, is dedicated to fostering a dynamic learning environment that celebrates and nurtures individual talents. With a commitment to excellence, the department continuously enhances its academic offerings to ensure students are well-equipped with practical knowledge aligned with the evolving needs of the industry. The department takes pride in producing adept professionals in the realm of information technology. Following the attainment of autonomous status, the curriculum has been enriched to delve into the latest advancements in technology, enabling students to stay abreast of cutting-edge developments in the field.</div>
+                    
+                </div>
+
+            </div>
+            <div class="item" style="background-image: url(logo.jpeg.jpg);">
+                <div class="contant">
+                    <div class="name">Vivere</div>
+                    <div class="des">Vivere, the annual symposium organized by the Information Technology department at Kongu Engineering College, is a dynamic event that encapsulates both technical and non-technical brilliance. Held each year, it stands as a testament to innovation and creativity, bringing together students to showcase their prowess in diverse fields. With a mix of engaging technical challenges and entertaining non-tech events, Vivere provides a platform for students to explore, learn, and celebrate their talents. The symposium's legacy continues to flourish, fostering a vibrant community and leaving an indelible mark on the academic landscape of the college.</div>
+                   
+                </div>
+
+            </div>
+        </div>
+        <div class="button">
+            <button class="prev"><i class="fa-solid fa-arrow-left-long"></i></button>
+            <button class="next"><i class="fa-solid fa-arrow-right-long"></i></button>
+
+        </div>
+    </div>
+    <div id="particles-js"></div>
+    <script>
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#000000'
+                },
+                shape: {
+                    type: 'circle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    },
+                    image: {
+                        src: 'img/github.svg',
+                        width: 100,
+                        height: 100
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#000000',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+    </script>
+    
+</section>
+        <script src="app.js"></script> 
+</body>
+</html>
